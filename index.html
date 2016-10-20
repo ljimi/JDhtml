@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东就是京东就是京东</title>
+    <link rel="stylesheet" href="base.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript">
+        window.onload = function(){
+            //事件源:  登录
+            var login = document.getElementById("login");
+            var mask = document.getElementById("mask");
+            var box = document.getElementById("box");
+            login.onclick = function(){
+                // 当我们点击登录，会弹出灰色的大盒子和白色的小盒子
+                mask.style.display = "block";
+                box.style.display = "block";
+            }
+            // 事件源 span x
+            var close_all = document.getElementById("close_all");
+            close_all.onclick = function(){
+                mask.style.display = 'none';
+                box.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="mask"></div>
+<div id="box">
+    <span id="close_all">×</span>
+</div>
+<div class="shortcut">
+    <div class="w">
+        <div class="fl">
+            <div class="dt">送至：北京
+                <i><s>◇</s></i>
+        </div>
+        </div>
+
+        <div class="fr">
+            <ul>
+                <li>
+                    <a href="#"> 你好，请登录 </a>&nbsp;&nbsp;
+                    <a href="#" class="col-red"> 免费注册 </a>
+                </li>
+                <li class="line"></li>
+                <li>我的订单</li>
+                <li class="line"></li>
+                <li class="fore tel-jd">
+                    <em class="tel"></em>
+                    我的京东
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li>京东会员</li>
+                <li class="line"></li>
+                <li>企业采购</li>
+                <li class="line"></li>
+                <li class="fore">
+                    手机京东
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li class="fore">
+                    关注京东
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li class="fore">
+                    客户服务
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li class="fore">
+                    网站导航
+                    <i><s>◇</s></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="topbanner" id="top_banner">
+    <div class="w tp">
+        <img src="images/topbanner.jpg" alt=""/>
+        <a href="javascript:;" class="close-banner" id="jd_close"></a>
+    </div>
+</div>
+<script>
+    /*事件源： a
+     事件  点击
+     事件处理程序   topbanner 这个隐藏的意思*/
+    /*要做事，先找人*/
+    var jd_close = document.getElementById("jd_close"); // 得到a
+    var topBanner = document.getElementById("top_banner"); // 得到大的
+    //事件源.事件 = function(){}
+    jd_close.onclick = function(){
+        topBanner.style.display = "none";
+    }
+</script>
+<div class="w clearfix">
+    <div class="logo">
+        <a href="http://www.jd.com" target="_blank" class="jd-a" title="叮咚">京东</a>
+        <div class="db11">
+            <a href="#"><img src="images/dong.gif" alt=""/></a>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" name="" id="" value="图书开抢"/>
+        <button>搜索</button>
+    </div>
+    <div class="car">
+        <a href="#">俺的购物车</a>
+        <span class="icon1"></span>
+        <span class="icon2">></span>
+        <span class="icon3">8</span>
+    </div>
+    <div class="hotwords">
+        <a href="#" class="col-red">10月1天</a>
+        <a href="#">10.1秒杀</a>
+        <a href="#">买2免1</a>
+        <a href="#">Note7 黑</a>
+        <a href="#">12期免息</a>
+        <a href="#">智能科技</a>
+        <a href="#">清仓</a>
+        <a href="#">国际服饰</a>
+        <a href="#">优惠券</a>
+    </div>
+</div>
+<div class="jd-nav">
+    <div class="w">
+            <div class="dropdown">
+                <div class="dt">
+                    <a href="#">全部商品分类</a>
+                </div>
+                <div class="dd">
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li class="new"><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">金融</a></li>
+                    <li><a href="#">智能</a></li>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
